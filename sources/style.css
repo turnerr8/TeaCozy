@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    
+    text-align: center;
+}
+
+#nav {
+    position: fixed;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 50;
+    
+}
+#nav .container {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 30%;
+    min-width: 20%;
+    flex-grow: 1;
+
+}
+
+#nav .container a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+#nav-dummy{
+    width: 100%;
+    height: 65px;
+}
+
+#head {
+
+    height: 700px;
+    width: 1200px;
+    margin: auto;
+    background-image: url(./images/img-mission-background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#head .text-overlay {
+    background-color: black;
+    width: 100%;   
+}
+
+#head .text-overlay h2,
+#head .text-overlay h4 {
+    margin: .5em;
+}
+
+#tea-of-month .text-overlay {
+    
+    margin: 20px auto;
+    background-color: black;
+}
+
+#tea-of-month .text-overlay h2,
+#tea-of-month .text-overlay h4 {
+    margin: .5em;
+}
+
+#tea-of-month .text-overlay h2 {
+    margin-top: 2em;
+}
+
+
+#tea-of-month #gallary {
+    margin: 20px auto;
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallary .pic {
+    max-width: 300px;
+
+}
+#gallary .pic img {
+    max-height: 200px;
+    max-width: 300px;
+    
+}
